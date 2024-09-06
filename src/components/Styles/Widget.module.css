@@ -1,0 +1,17 @@
+.card-widget {
+    font-weight: bold;
+    background-color: white;
+}
+
+.icono-widget {
+    font-size: 2.5rem; /* Tamaño grande para el ícono */
+}
+
+.texto-widget {
+    font-size: 1rem;
+}
+
+.numero-widget {
+    font-size: 1.5rem;
+    line-height: 1.2; /* Ajustamos el line-height para separar el número del texto */
+}
