@@ -8,7 +8,7 @@ const DashBoardView = () => {
   const [historiasClinicas, setHistoriasClinicas] = useState([]); // Estado para almacenar las historias clínicas
   const [infoWidgets, setInfoWidgets] = useState([]); // Estado para almacenar la información mostrada en los widgets
 
-  // Función para obtener la fecha de hoy a medianoche en formato ISO
+  // Función para obtener la fecha de hoy 
   const getTodayDate = () => {
     const today = new Date();
     today.setHours(0, 0, 0, 0);

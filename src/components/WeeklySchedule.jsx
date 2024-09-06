@@ -14,7 +14,7 @@ const WeeklySchedule = ({ citas }) => {
   // Filtrar y ordenar citas dentro del rango de lunes a viernes
   const filterAndSortCitasByWeek = () => {
     const startOfWeek = getDayOfWeek(1); // Lunes
-    const endOfWeek = getDayOfWeek(5); // Viernes
+    const endOfWeek = getDayOfWeek(6); // Viernes
 
     // Filtrar citas que caen entre el lunes y el viernes
     const citasFiltradas = citas.filter((cita) => {
@@ -47,7 +47,7 @@ const WeeklySchedule = ({ citas }) => {
     const diaSemana = citaFecha.getDay(); // Obtener el día 
     const hora = citaFecha.getHours();
 
-    if (hora >= 8 && hora <= 17) { // Solo horas laborales
+    if (hora >= 8 && hora <= 18) { // Solo horas laborales
       const key = `${daysOfWeek[diaSemana - 1]} ${hora}:00`;
 
       if (!citasPorHoraYDia[key]) {
